@@ -1,0 +1,30 @@
+#XSPEC version: 12.14.0
+#Build Date/Time: Fri Mar  1 15:32:33 2024
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : C-Statistic                    0.34     using 6 bins, spectrum 1, group 1.
+#
+#Warning: cstat statistic is only valid for Poisson data.
+#    Source file is not Poisson for spectrum 1
+#
+#                 C-Statistic                  561.06     using 665 bins, spectrum 2, group 2.
+#Total fit statistic                           561.39     with 660 d.o.f.
+#
+#Test statistic : Chi-Squared                  792.57     using 671 bins.
+# Null hypothesis probability of 2.83e-04 with 660 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> flux 2 10
+#Spectrum 1: No overlap between matrix range  (   0.00128732,  0.00774149 ) 
+#and the requested range (            2,          10 )
+# Model Flux 0.0024732 photons (1.7018e-11 ergs/cm^2/s) range (2.0000 - 10.000 keV)
+#
+!XSPEC12> lumi 2 10 0.0364
+#Spectrum 1: No overlap between matrix range  (   0.00128732,  0.00774149 ) 
+#and the requested range (      1.92976,     9.64878 )
+#Model Luminosity 5.1720e+43 ergs/s  (2.0000 - 10.000 keV rest frame)
+#     (z = 0.0364 H0 =  70.0 q0 =  0.00 Lambda0 = 0.730)
+#
+!XSPEC12> log none
+#
